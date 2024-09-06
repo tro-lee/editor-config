@@ -1,0 +1,262 @@
+{
+    // 编辑器设置
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "MesloLGS NF, JetBrainsMono NF, Consolas, 'Courier New', monospace",
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.tabSize": 2,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+
+    // 文件设置
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.go": "go",
+        "*.wxs": "javascript",
+        "*.wxss": "css"
+    },
+    "files.autosave": "afterDelay",
+
+    // 语言特定设置
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+
+    // Git 设置
+    "git.autofetch": true,
+    "git.autorefresh": false,
+    "git.defaultBranchName": "main ",
+    "git.openRepositoryInParentFolders": "never",
+
+    // Go 设置
+    "go.inferGopath": true,
+    "go.toolsManagement.autoUpdate": true,
+
+    // Markdown 设置
+    "markdown.preview.fontFamily": "JetBrains Mono, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+
+    // 安全设置
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // 搜索设置
+    "search.followSymlinks": false,
+
+    // 终端设置
+    "terminal.integrated.tabs.location": "left",
+
+    // 测试设置
+    "testing.automaticallyOpenPeekView": "failureAnywhere",
+
+    // Vim 设置
+    "vim.easymotion": true,
+    "vim.foldfix": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "F",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["H"],
+            "after": ["g", "T"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "t"]
+        },
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<space>"],
+            "commands": ["vspacecode.space"]
+        }
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "insert": "#B25068",
+        "normal": "#363062",
+        "replace": "#000000",
+        "visual": "#E7AB79",
+        "visualblock": "#86592d",
+        "visualline": "#005f87"
+    },
+    "vim.surround": true,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "_"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<space>"],
+            "commands": ["vspacecode.space"]
+        }
+    ],
+
+    // VSpaceCode 设置
+    "vspacecode.bindings": [
+        {
+            "key": "f",
+            "name": "搜索...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "搜索文件",
+                    "type": "command",
+                    "command": "workbench.action.quickOpen"
+                },
+                {
+                    "key": "i",
+                    "name": "搜索本文内容",
+                    "type": "command",
+                    "command": "fuzzySearch.activeTextEditor"
+                },
+                {
+                    "key": "a",
+                    "name": "搜索所有内容",
+                    "type": "command",
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "key": "c",
+            "name": "代码...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "r",
+                    "name": "重构",
+                    "type": "command",
+                    "command": "editor.action.refactor"
+                },
+                {
+                    "key": "f",
+                    "name": "格式化代码",
+                    "type": "command",
+                    "command": "editor.action.formatDocument"
+                }
+            ]
+        },
+        {
+            "key": "q",
+            "name": "退出页面",
+            "type": "command",
+            "command": "workbench.action.closeActiveEditor"
+        },
+        {
+            "key": "e",
+            "name": "开关侧边栏",
+            "type": "command",
+            "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+            "key": " ",
+            "name": "命令中心",
+            "type": "command",
+            "command": "workbench.action.showCommands"
+        },
+        {
+            "key": "\\",
+            "name": "横向分屏",
+            "type": "command",
+            "command": "workbench.action.splitEditor"
+        },
+        {
+            "key": "-",
+            "name": "纵向分屏",
+            "type": "command",
+            "command": "workbench.action.splitEditorDown"
+        }
+    ],
+
+    // 窗口设置
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "custom",
+
+    // 工作台设置
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#E7AB79",
+        "statusBar.noFolderBackground": "#E7AB79",
+        "statusBar.debuggingBackground": "#E7AB79",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "workbench.colorTheme": "Tokyo Night Gogh",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Tokyo Night Gogh",
+    "workbench.preferredHighContrastColorTheme": "Tokyo Night Gogh",
+    "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Gogh",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+
+    // 其他设置
+    "comments.openView": "never",
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput",
+        "javascript"
+    ],
+    "diffEditor.ignoreTrimWhitespace": true,
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "eslint.experimental.useFlatConfig": true,
+    "eslint.format.enable": true,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "minapp-vscode.disableAutoConfig": true,
+    "redhat.telemetry.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
+}
